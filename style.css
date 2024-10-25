@@ -1,0 +1,89 @@
+.container{
+    min-height: 100%;
+    background-color: cornflowerblue;
+    padding: 5%;
+    padding-left: 13%;
+
+} 
+.todo{
+    width:100%;
+    max-width: 540px;
+    background:white;
+    padding: 20%;
+    border-radius: 10px;
+}
+.todo h2{
+    color: darkslategray;
+    display: flex;
+    align-items: center;
+    margin: 40%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: aquamarine;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-right: 12%;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:goldenrod ;
+    color: #fff;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("https://img.freepik.com/free-vector/stroke-round-geometric-shape-vector_53876-175080.jpg?t=st=1729691390~exp=1729694990~hmac=e7f9c1470aeb6eefaf5115dccbae924cd06e7a37759d79cce93f82e205376352&w=740");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("https://img.freepik.com/free-vector/check-mark-outline_78370-4637.jpg?ga=GA1.1.1678998600.1689752697&semt=ais_hybrid");
+}
+ul li span{
+    background: url("https://cdn-icons-png.freepik.com/256/17253/17253027.png?ga=GA1.1.1678998600.1689752697&semt=ais_hybrid");
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background: #edeef0;
+}
